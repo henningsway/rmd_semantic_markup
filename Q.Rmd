@@ -1,0 +1,21 @@
+---
+output:
+  html_document:
+    css: Q.css
+  pdf_document:
+    pandoc_args: --lua-filter=Q.lua
+---
+
+# Styling with custom css/lua-filter
+## Variant A {.Q}
+
+this is also red
+
+## Variant B
+[Q] test {.Q}
+
+We would like to have inline styling, instead of introducing new headers.
+
+
+# Original styling
+1. __<span style="color:red">Q</span>__: This is how we want it to look
